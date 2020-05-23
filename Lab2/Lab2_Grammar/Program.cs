@@ -28,8 +28,7 @@ namespace Lab2_Grammar
             SaveReadableFormat("grammar_out_noLR2.txt", terminals2, nonTerminals2, productions2);
             XmlWorker.GrammarWriter("Grammar_noLR2.xml", terminals2, nonTerminals2, productions2);
 
-            // Устранение цепных правил  и левой рекурсии у грамматики G0 
-
+            // Устранение цепных правил  и левой рекурсии у грамматики G0
             Dictionary<NonTerminal, List<Generation>> productions3 = XmlWorker.GrammarReader("Grammar0.xml", out List<Terminal> terminals3,
                 out List<NonTerminal> nonTerminals3);
             SaveReadableFormat("grammar_in3.txt", terminals3, nonTerminals3, productions3);

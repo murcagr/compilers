@@ -1,5 +1,4 @@
 ﻿using Lab2_Grammar.Elements;
-using Lab2_Grammar.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,94 +17,76 @@ namespace Lab2_Grammar
 
             for (int i = 0; i < ntCount; i++)
             {
-                // Копируем порождения Ai нетерминала
+                
                 List<Generation> currGens = new List<Generation>(productions[productionNonTerms[i]]);
-
+                // Indirect recur
                 for (int j = 0; j < i; j++)
                 {
                     int gensCount = currGens.Count;
                     for (int k = 0; k < gensCount; k++)
                     {
-                        // Копируем одно k-тое порождение Ai нетерминала
+                        
                         Generation gen = new Generation(currGens[k]);
 
-                        // Если оно имеет вид Ai -> Aja
                         if (gen.Gen.First().Name == productionNonTerms[j].Name)
                         {
-                            // Копируем порождения Aj нетерминала
                             List<Generation> jGens = new List<Generation>(productions[productionNonTerms[j]]);
 
-                            // Удаляем это k-тое порождение, чтобы заменить его потом раскрытыми порождениями Aj нетерминала
                             currGens.RemoveAt(k);
-                            // Удаляем первый нетерминал (Aj) в k-том порождении, чтобы заменить его после продукциями Aj
                             gen.Gen.RemoveAt(0);  // Остается a
 
-                            // Проходим по всем порождениям Aj нетрминала
                             foreach (var jGen in jGens)
                             {
-                                // Копируем очередное порождение Aj
                                 Generation newJGen = new Generation(jGen);
-                                // Добавляем к нему k-тое порождение Ai без первого нетерминала (ранее удаленного)
                                 newJGen.Gen.AddRange(gen.Gen);
-                                // Вставляем получившееся раскрытое порождение в продукции Ai нетерминала
                                 currGens.Add(newJGen);
                             }
                         }
                     }
                 }
 
-                // Удаляем из словаря старые продукции от нетерминала Ai
                 productions.Remove(productionNonTerms[i]);
 
-                // Если есть леворекурсивные порождения
+
+                // Direct
                 if (currGens.Any(g => g.Gen.First().Name == productionNonTerms[i].Name))
                 {
-                    // Добавляем новый нетерминал отличающий от текущего на ' (Ai и Ai')
                     nonTerminals.Add(new NonTerminal() { Name = productionNonTerms[i].Name + "'" });
-                    // Новые продукции от нового нетерминала Ai'
                     List<Generation> newNTGens = new List<Generation>();
-                    // новые продукции от старого нетерминала Ai
                     List<Generation> oldNTGens = new List<Generation>();
 
-                    // Для каждого порождения Ai нетерминала (Ai -> Aia | b)
                     foreach (var gen in currGens)
                     {
-                        // Если это леворекурсивное порождение => должно иметь вид Ai' -> aAi'
                         if (gen.Gen.First().Name == productionNonTerms[i].Name)
                         {
-                            // Удаляем первый "рекурсивный" нетерминал (само Ai) из исходного порождения
                             gen.Gen.RemoveAt(0);
 
-                            // Создаем новое порождение
                             Generation newGen = new Generation();
-                            // Вставляем в начало порождения исходное порождение без первого символа (a)
                             newGen.Gen.AddRange(gen.Gen);
-                            // Добавляем новый только что добавленный нетерминал (Ai')
                             newGen.Gen.Add(nonTerminals.Last());
                             newNTGens.Add(newGen);
                         }
-                        else  // Если не леворекурсивное порождение => должно иметь вид Ai -> bAi'
+                        else  
                         {
-                            // Создаем новое порождение
+                            
                             Generation newGen = new Generation();
-                            // Вставляем в начало порождения исходное не леворекурсивное порождение (b)
+                            
                             newGen.Gen.AddRange(gen.Gen);
-                            // Добавляем новый только что добавленный нетерминал (Ai')
+                            
                             newGen.Gen.Add(nonTerminals.Last());
                             oldNTGens.Add(newGen);
                         }
                     }
-                    // Добавляем к продукциям от нового нетерминала Ai' продукцию Ai' -> eps
+                    
                     newNTGens.Add(new Generation() { Gen = new List<Symbol>() { terminals.Find(t => t.Name == "EPS") } });
 
-                    // Добавляем в словарь новые продукции от нетерминала Ai
+                    
                     productions.Add(productionNonTerms[i], oldNTGens);
-                    // Добавляем в словарь новые продукции от нетерминала Ai'
                     productions.Add(nonTerminals.Last(), newNTGens);
                 }
-                else  // Если леворекурсивных порождений нет - просто оставляем раскрытые порождения
+                else  
                 {
-                    // Добавляем в словарь новые раскрытые продукции от нетерминала Ai
+                    
                     productions.Add(productionNonTerms[i], currGens);
                 }
             }
