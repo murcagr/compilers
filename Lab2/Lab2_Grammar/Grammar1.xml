@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--4.9-->
+<grammar name="G1">
+  <terminalsymbols>
+    <term name="a" spell="a" />
+    <term name="b" spell="b" />
+    <term name="c" spell="c" />
+    <term name="d" spell="d" />
+    <term name="EPS" spell="eps" />
+  </terminalsymbols>
+  <nonterminalsymbols>
+    <nonterm name="S" />
+    <nonterm name="A" />
+  </nonterminalsymbols>
+  <productions>
+    <production>
+      <lhs name="S" />
+      <rhs>
+        <symbol type="nonterm" name="A" />
+        <symbol type="term" name="a" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="S" />
+      <rhs>
+        <symbol type="term" name="b" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="A" />
+      <rhs>
+        <symbol type="nonterm" name="A" />
+        <symbol type="term" name="c" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="A" />
+      <rhs>
+        <symbol type="nonterm" name="S" />
+        <symbol type="term" name="d" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="A" />
+      <rhs>
+        <symbol type="term" name="EPS" />
+      </rhs>
+    </production>
+  </productions>
+  <startsymbol name="S" />
+</grammar>
