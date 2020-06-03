@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<grammar name="G">
+  <terminalsymbols>
+    <term name="IDENT" spell="a" />
+    <term name="CONST" spell="c" />
+    <term name="ADD" spell="+" />
+    <term name="OR" spell="or" />
+    <term name="MIN" spell="-" />
+    <term name="NOT" spell="not" />
+    <term name="MUL" spell="*" />
+    <term name="DIV" spell="/" />
+    <term name="DDIIVV" spell="div" />
+    <term name="MOD" spell="mod" />
+    <term name="AND" spell="and" />
+    <term name="LE" spell="&lt;" />
+    <term name="PLUS" spell="+" />
+    <term name="MINUS" spell="-" />
+    <term name="LEQ" spell="&lt;=" />
+    <term name="EQ" spell="==" />
+    <term name="NEQ" spell="&lt;&gt;" />
+    <term name="GR" spell="&gt;" />
+    <term name="GEQ" spell="&gt;=" />
+    <term name="LPAREN" spell="(" />
+    <term name="RPAREN" spell=")" />
+    <term name="BEGIN" spell="begin" />
+    <term name="END" spell="end" />
+    <term name="SEMI" spell=";" />
+    <term name="EPS" spell="e" />
+  </terminalsymbols>
+  <nonterminalsymbols>
+    <nonterm name="PROG" />
+    <nonterm name="BLOCK" />
+    <nonterm name="OPLIST" />
+    <nonterm name="OPERATOR" />
+    
+    <nonterm name="EXP" />
+    <nonterm name="SEXP" />
+    <nonterm name="ROP" />
+    <nonterm name="AOP" />
+    <nonterm name="MOP" />
+    <nonterm name="SIGN" />
+    <nonterm name="F" />
+    <nonterm name="T" />
+  </nonterminalsymbols>
+  <productions>
+    <production>
+      <lhs name="EXP" />
+      <rhs>
+        <symbol type="nonterm" name="SEXP" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="EXP" />
+      <rhs>
+        <symbol type="nonterm" name="SEXP" />
+        <symbol type="nonterm" name="ROP" />
+        <symbol type="nonterm" name="SEXP" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="SEXP" />
+      <rhs>
+        <symbol type="nonterm" name="T" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="SEXP" />
+      <rhs>
+        <symbol type="nonterm" name="SIGN" />
+        <symbol type="nonterm" name="T" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="SEXP" />
+      <rhs>
+        <symbol type="nonterm" name="SEXP" />
+        <symbol type="nonterm" name="AOP" />
+        <symbol type="nonterm" name="T" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="T" />
+      <rhs>
+        <symbol type="nonterm" name="F" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="T" />
+      <rhs>
+        <symbol type="nonterm" name="T" />
+        <symbol type="nonterm" name="MOP" />
+        <symbol type="nonterm" name="F" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="F" />
+      <rhs>
+        <symbol type="term" name="IDENT" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="F" />
+      <rhs>
+        <symbol type="term" name="CONST" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="F" />
+      <rhs>
+        <symbol type="term" name="LPAREN" />
+        <symbol type="nonterm" name="SEXP" />
+        <symbol type="term" name="RPAREN" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="F" />
+      <rhs>
+        <symbol type="term" name="NOT" />
+        <symbol type="nonterm" name="F" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="ROP" />
+      <rhs>
+        <symbol type="term" name="LE" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="ROP" />
+      <rhs>
+        <symbol type="term" name="LEQ" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="ROP" />
+      <rhs>
+        <symbol type="term" name="EQ" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="ROP" />
+      <rhs>
+        <symbol type="term" name="NEQ" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="ROP" />
+      <rhs>
+        <symbol type="term" name="GR" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="ROP" />
+      <rhs>
+        <symbol type="term" name="GEQ" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="SIGN" />
+      <rhs>
+        <symbol type="term" name="PLUS" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="SIGN" />
+      <rhs>
+        <symbol type="term" name="MINUS" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="AOP" />
+      <rhs>
+        <symbol type="term" name="ADD" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="AOP" />
+      <rhs>
+        <symbol type="term" name="OR" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="AOP" />
+      <rhs>
+        <symbol type="term" name="MIN" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="MOP" />
+      <rhs>
+        <symbol type="term" name="MUL" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="MOP" />
+      <rhs>
+        <symbol type="term" name="DIV" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="MOP" />
+      <rhs>
+        <symbol type="term" name="DDIIVV" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="MOP" />
+      <rhs>
+        <symbol type="term" name="MOD" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="MOP" />
+      <rhs>
+        <symbol type="term" name="AND" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="PROG" />
+      <rhs>
+        <symbol type="nonterm" name="BLOCK" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="BLOCK" />
+      <rhs>
+        <symbol type="term" name="BEGIN" />
+        <symbol type="nonterm" name="OPLIST" />
+        <symbol type="term" name="END" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="OPLIST" />
+      <rhs>
+        <symbol type="nonterm" name="OPERATOR" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="OPLIST" />
+      <rhs>
+        <symbol type="nonterm" name="OPLIST" />
+        <symbol type="term" name="SEMI" />
+        <symbol type="nonterm" name="OPERATOR" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="OPERATOR" />
+      <rhs>
+        <symbol type="term" name="IDENT" />
+        <symbol type="term" name="EQ" />
+        <symbol type="nonterm" name="EXP" />
+      </rhs>
+    </production>
+  </productions>
+  <startsymbol name="PROG" />
+</grammar>

@@ -11,7 +11,7 @@ namespace Lab2_Grammar
         public static void Main(string[] args)
         {
             // Устранение левой рекурсии у грамматики G0
-            Dictionary<NonTerminal, List<Generation>> productions = XmlWorker.GrammarReader("Grammar0.xml", out List<Terminal> terminals,
+            Dictionary<NonTerminal, List<Generation>> productions = XmlWorker.GrammarReader("Grammar3withp.xml", out List<Terminal> terminals,
                 out List<NonTerminal> nonTerminals);
             SaveReadableFormat("grammar_in.txt", terminals, nonTerminals, productions);
             
@@ -19,14 +19,14 @@ namespace Lab2_Grammar
             SaveReadableFormat("grammar_out_noLR.txt", terminals, nonTerminals, productions);
             XmlWorker.GrammarWriter("Grammar_noLR.xml", terminals, nonTerminals, productions);
 
-            // Устранение левой рекурсии у грамматики G1
-            Dictionary<NonTerminal, List<Generation>> productions2 = XmlWorker.GrammarReader("Grammar1.xml", out List<Terminal> terminals2,
+            // Устранение левой рекурсии у грамматики G3
+            Dictionary<NonTerminal, List<Generation>> productions2 = XmlWorker.GrammarReader("Grammar3withp.xml", out List<Terminal> terminals2,
                 out List<NonTerminal> nonTerminals2);
-            SaveReadableFormat("grammar_in2.txt", terminals2, nonTerminals2, productions2);
+            SaveReadableFormat("grammar_inAB.txt", terminals2, nonTerminals2, productions2);
 
-            productions2 = GrammarWorker.LRElimination(terminals2, nonTerminals2, productions2);
-            SaveReadableFormat("grammar_out_noLR2.txt", terminals2, nonTerminals2, productions2);
-            XmlWorker.GrammarWriter("Grammar_noLR2.xml", terminals2, nonTerminals2, productions2);
+            productions2 = GrammarWorker.chainRuleElimination(terminals2, nonTerminals2, productions2);
+            SaveReadableFormat("grammar_out_noCRAB.txt", terminals2, nonTerminals2, productions2);
+            XmlWorker.GrammarWriter("Grammar_noCRAB.xml", terminals2, nonTerminals2, productions2);
 
             // Устранение цепных правил  и левой рекурсии у грамматики G0
             Dictionary<NonTerminal, List<Generation>> productions3 = XmlWorker.GrammarReader("Grammar0.xml", out List<Terminal> terminals3,
@@ -36,7 +36,7 @@ namespace Lab2_Grammar
             productions3 = GrammarWorker.chainRuleElimination(terminals3, nonTerminals3, productions3);
             SaveReadableFormat("grammar_out_noCR3.txt", terminals3, nonTerminals3, productions3);
             XmlWorker.GrammarWriter("Grammar_noCR3.xml", terminals3, nonTerminals3, productions3);
-            productions3 = GrammarWorker.chainRuleElimination(terminals3, nonTerminals3, productions3);
+            productions3 = GrammarWorker.LRElimination(terminals3, nonTerminals3, productions3);
             SaveReadableFormat("grammar_out_noLR3.txt", terminals3, nonTerminals3, productions3);
             XmlWorker.GrammarWriter("Grammar_noLR3.xml", terminals3, nonTerminals3, productions3);
 

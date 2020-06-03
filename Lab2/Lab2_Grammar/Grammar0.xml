@@ -12,6 +12,7 @@
   <nonterminalsymbols>
     <nonterm name="E" />
     <nonterm name="T" />
+    <nonterm name="Z" />
     <nonterm name="F" />
   </nonterminalsymbols>
   <productions>
@@ -55,6 +56,13 @@
         <symbol type="term" name="LPAREN" />
         <symbol type="nonterm" name="E" />
         <symbol type="term" name="RPAREN" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="Z" />
+      <rhs>
+        <symbol type="nonterm" name="Z" />
+        <symbol type="nonterm" name="Z" />
       </rhs>
     </production>
   </productions>

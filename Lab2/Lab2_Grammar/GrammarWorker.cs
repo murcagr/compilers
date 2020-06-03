@@ -33,7 +33,7 @@ namespace Lab2_Grammar
                             List<Generation> jGens = new List<Generation>(productions[productionNonTerms[j]]);
 
                             currGens.RemoveAt(k);
-                            gen.Gen.RemoveAt(0);  // Остается a
+                            gen.Gen.RemoveAt(0); 
 
                             foreach (var jGen in jGens)
                             {
@@ -64,7 +64,7 @@ namespace Lab2_Grammar
                             Generation newGen = new Generation();
                             newGen.Gen.AddRange(gen.Gen);
                             newGen.Gen.Add(nonTerminals.Last());
-                            newNTGens.Add(newGen);
+                            newNTGens.Add(newGen);  
                         }
                         else  
                         {
@@ -104,7 +104,7 @@ namespace Lab2_Grammar
             // Для каждого нетерминала
             for (int i = 0; i < nonTerminals.Count; i++)
             {
-                // Na = {B|A -> B} 
+                // Na = {B|A *-> B}
                 var N = new List<HashSet<NonTerminal>>();
                 // Добавляем в N0 текущий нетерминал 
                 N.Add(new HashSet<NonTerminal>() { nonTerminals[i]} );
