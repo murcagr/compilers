@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<grammar name="G">
+  <terminalsymbols>
+    <term name="IDENT" spell="a" />
+    <term name="CONST" spell="c" />
+    <term name="ADD" spell="+" />
+    <term name="MIN" spell="-" />
+    <term name="MUL" spell="*" />
+    <term name="DIV" spell="/" />
+    <term name="LE" spell="&lt;" />
+    <term name="LEQ" spell="&lt;=" />
+    <term name="EQ" spell="==" />
+    <term name="NEQ" spell="&lt;&gt;" />
+    <term name="GR" spell="&gt;" />
+    <term name="GEQ" spell="&gt;=" />
+    <term name="LPAREN" spell="(" />
+    <term name="RPAREN" spell=")" />
+    <term name="EPS" spell="e" />
+  </terminalsymbols>
+  <nonterminalsymbols>
+    <nonterm name="EXP" />
+    <nonterm name="AEXP" />
+    <nonterm name="ROP" />
+    <nonterm name="AOP" />
+    <nonterm name="T" />
+    <nonterm name="MOP" />
+    <nonterm name="F" />
+    <nonterm name="AEXP'" />
+    <nonterm name="T'" />
+	<nonterm name="EXP'" />
+  </nonterminalsymbols>
+  <productions>
+    <production>
+      <lhs name="EXP" />
+      <rhs>
+        <symbol type="nonterm" name="AEXP" />
+        <symbol type="nonterm" name="EXP'" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="EXP'" />
+      <rhs>
+		<symbol type="nonterm" name="ROP" />
+        <symbol type="nonterm" name="AEXP" />
+      </rhs>
+    </production>
+	<production>
+      <lhs name="EXP'" />
+      <rhs>
+		<symbol type="term" name="EPS" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="AEXP" />
+      <rhs>
+        <symbol type="nonterm" name="T" />
+        <symbol type="nonterm" name="AEXP'" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="T" />
+      <rhs>
+        <symbol type="nonterm" name="F" />
+        <symbol type="nonterm" name="T'" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="F" />
+      <rhs>
+        <symbol type="term" name="IDENT" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="F" />
+      <rhs>
+        <symbol type="term" name="CONST" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="F" />
+      <rhs>
+        <symbol type="term" name="LPAREN" />
+        <symbol type="nonterm" name="AEXP" />
+        <symbol type="term" name="RPAREN" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="ROP" />
+      <rhs>
+        <symbol type="term" name="LE" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="ROP" />
+      <rhs>
+        <symbol type="term" name="LEQ" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="ROP" />
+      <rhs>
+        <symbol type="term" name="EQ" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="ROP" />
+      <rhs>
+        <symbol type="term" name="NEQ" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="ROP" />
+      <rhs>
+        <symbol type="term" name="GR" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="ROP" />
+      <rhs>
+        <symbol type="term" name="GEQ" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="AOP" />
+      <rhs>
+        <symbol type="term" name="ADD" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="AOP" />
+      <rhs>
+        <symbol type="term" name="MIN" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="MOP" />
+      <rhs>
+        <symbol type="term" name="MUL" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="MOP" />
+      <rhs>
+        <symbol type="term" name="DIV" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="AEXP'" />
+      <rhs>
+        <symbol type="nonterm" name="AOP" />
+        <symbol type="nonterm" name="T" />
+        <symbol type="nonterm" name="AEXP'" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="AEXP'" />
+      <rhs>
+        <symbol type="term" name="EPS" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="T'" />
+      <rhs>
+        <symbol type="nonterm" name="MOP" />
+        <symbol type="nonterm" name="F" />
+        <symbol type="nonterm" name="T'" />
+      </rhs>
+    </production>
+    <production>
+      <lhs name="T'" />
+      <rhs>
+        <symbol type="term" name="EPS" />
+      </rhs>
+    </production>
+  </productions>
+  <startsymbol name="EXP" />
+</grammar>
