@@ -1,0 +1,6 @@
+
+def func (a,b,c)
+  return a+b+c
+end
+
+a = func(10)

@@ -1,0 +1,899 @@
+{
+  "Prog": [
+    {
+      "Expression_list": [
+        {
+          "Expression_list": [
+            {
+              "Expression_list": [
+                {
+                  "Expression_list": [
+                    {
+                      "Expression_list": [
+                        {
+                          "Expression_list": [
+                            {
+                              "Expression_list": [
+                                {
+                                  "Terminator": [
+                                    {
+                                      "Crlf": [
+                                        {
+                                          "tokenType": "CRLF",
+                                          "text": "\r\n"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Expression": [
+                                {
+                                  "Rvalue": [
+                                    {
+                                      "Initial_array_assignment": [
+                                        {
+                                          "Lvalue": [
+                                            {
+                                              "type": "Array",
+                                              "Id": [
+                                                {
+                                                  "tokenType": "ID",
+                                                  "text": "a"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "tokenType": "ASSIGN",
+                                          "text": "="
+                                        },
+                                        {
+                                          "tokenType": "LEFT_SBRACKET",
+                                          "text": "["
+                                        },
+                                        {
+                                          "tokenType": "RIGHT_SBRACKET",
+                                          "text": "]"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Terminator": [
+                                {
+                                  "Crlf": [
+                                    {
+                                      "tokenType": "CRLF",
+                                      "text": "\r\n"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "Expression": [
+                            {
+                              "Rvalue": [
+                                {
+                                  "Array_assignment": [
+                                    {
+                                      "Array_selector": [
+                                        {
+                                          "type": "Array",
+                                          "Id": [
+                                            {
+                                              "tokenType": "ID",
+                                              "text": "a"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "tokenType": "LEFT_SBRACKET",
+                                          "text": "["
+                                        },
+                                        {
+                                          "type": "Integer",
+                                          "Int_result": [
+                                            {
+                                              "Int_t": [
+                                                {
+                                                  "tokenType": "INT",
+                                                  "text": "1"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "tokenType": "RIGHT_SBRACKET",
+                                          "text": "]"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tokenType": "ASSIGN",
+                                      "text": "="
+                                    },
+                                    {
+                                      "type": "Integer",
+                                      "All_result": [
+                                        {
+                                          "type": "Integer",
+                                          "Int_result": [
+                                            {
+                                              "Int_t": [
+                                                {
+                                                  "tokenType": "INT",
+                                                  "text": "10"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "Terminator": [
+                            {
+                              "Terminator": [
+                                {
+                                  "Crlf": [
+                                    {
+                                      "tokenType": "CRLF",
+                                      "text": "\r\n"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Crlf": [
+                                {
+                                  "tokenType": "CRLF",
+                                  "text": "\r\n"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "Expression": [
+                        {
+                          "For_statement": [
+                            {
+                              "For_header": [
+                                {
+                                  "tokenType": "FOR",
+                                  "text": "for"
+                                },
+                                {
+                                  "type": "Unknown",
+                                  "Id": [
+                                    {
+                                      "tokenType": "ID",
+                                      "text": "i"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tokenType": "IN",
+                                  "text": "in"
+                                },
+                                {
+                                  "type": "Array",
+                                  "Dynamic_result": [
+                                    {
+                                      "type": "Array",
+                                      "Dynamic": [
+                                        {
+                                          "type": "Array",
+                                          "Id": [
+                                            {
+                                              "tokenType": "ID",
+                                              "text": "a"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tokenType": "DO",
+                                  "text": "do"
+                                },
+                                {
+                                  "Crlf": [
+                                    {
+                                      "tokenType": "CRLF",
+                                      "text": "\r\n"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Statement_body": [
+                                {
+                                  "Statement_expression_list": [
+                                    {
+                                      "Expression": [
+                                        {
+                                          "Function_inline_call": [
+                                            {
+                                              "Function_call": [
+                                                {
+                                                  "Function_name": [
+                                                    {
+                                                      "type": "Func",
+                                                      "Id": [
+                                                        {
+                                                          "tokenType": "ID",
+                                                          "text": "puts"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "Function_call_param_list": [
+                                                    {
+                                                      "Function_call_params": [
+                                                        {
+                                                          "Function_param": [
+                                                            {
+                                                              "Function_unnamed_param": [
+                                                                {
+                                                                  "type": "Integer",
+                                                                  "Dynamic_result": [
+                                                                    {
+                                                                      "type": "Integer",
+                                                                      "Dynamic": [
+                                                                        {
+                                                                          "type": "Integer",
+                                                                          "Id": [
+                                                                            {
+                                                                              "tokenType": "ID",
+                                                                              "text": "i"
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "Terminator": [
+                                        {
+                                          "Crlf": [
+                                            {
+                                              "tokenType": "CRLF",
+                                              "text": "\r\n"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tokenType": "END",
+                              "text": "end"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "Terminator": [
+                        {
+                          "Terminator": [
+                            {
+                              "Crlf": [
+                                {
+                                  "tokenType": "CRLF",
+                                  "text": "\r\n"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "Crlf": [
+                            {
+                              "tokenType": "CRLF",
+                              "text": "\r\n"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Expression": [
+                    {
+                      "For_statement": [
+                        {
+                          "For_header": [
+                            {
+                              "tokenType": "FOR",
+                              "text": "for"
+                            },
+                            {
+                              "type": "Integer",
+                              "Id": [
+                                {
+                                  "tokenType": "ID",
+                                  "text": "i"
+                                }
+                              ]
+                            },
+                            {
+                              "tokenType": "IN",
+                              "text": "in"
+                            },
+                            {
+                              "type": "Integer",
+                              "Int_result": [
+                                {
+                                  "Int_t": [
+                                    {
+                                      "tokenType": "INT",
+                                      "text": "0"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tokenType": "TD",
+                              "text": ".."
+                            },
+                            {
+                              "type": "Integer",
+                              "Int_result": [
+                                {
+                                  "Int_t": [
+                                    {
+                                      "tokenType": "INT",
+                                      "text": "10"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tokenType": "DO",
+                              "text": "do"
+                            },
+                            {
+                              "Crlf": [
+                                {
+                                  "tokenType": "CRLF",
+                                  "text": "\r\n"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "Statement_body": [
+                            {
+                              "Statement_expression_list": [
+                                {
+                                  "Expression": [
+                                    {
+                                      "Function_inline_call": [
+                                        {
+                                          "Function_call": [
+                                            {
+                                              "Function_name": [
+                                                {
+                                                  "type": "Func",
+                                                  "Id": [
+                                                    {
+                                                      "tokenType": "ID",
+                                                      "text": "puts"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "Function_call_param_list": [
+                                                {
+                                                  "Function_call_params": [
+                                                    {
+                                                      "Function_param": [
+                                                        {
+                                                          "Function_unnamed_param": [
+                                                            {
+                                                              "type": "Integer",
+                                                              "Dynamic_result": [
+                                                                {
+                                                                  "type": "Integer",
+                                                                  "Dynamic": [
+                                                                    {
+                                                                      "type": "Integer",
+                                                                      "Id": [
+                                                                        {
+                                                                          "tokenType": "ID",
+                                                                          "text": "i"
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "Terminator": [
+                                    {
+                                      "Crlf": [
+                                        {
+                                          "tokenType": "CRLF",
+                                          "text": "\r\n"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tokenType": "END",
+                          "text": "end"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Terminator": [
+                    {
+                      "Terminator": [
+                        {
+                          "Crlf": [
+                            {
+                              "tokenType": "CRLF",
+                              "text": "\r\n"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "Crlf": [
+                        {
+                          "tokenType": "CRLF",
+                          "text": "\r\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Expression": [
+                {
+                  "For_statement": [
+                    {
+                      "For_header": [
+                        {
+                          "tokenType": "LEFT_RBRACKET",
+                          "text": "("
+                        },
+                        {
+                          "type": "Integer",
+                          "Int_result": [
+                            {
+                              "Int_t": [
+                                {
+                                  "tokenType": "INT",
+                                  "text": "0"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tokenType": "TD",
+                          "text": ".."
+                        },
+                        {
+                          "type": "Integer",
+                          "Int_result": [
+                            {
+                              "Int_t": [
+                                {
+                                  "tokenType": "INT",
+                                  "text": "10"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tokenType": "RIGHT_RBRACKET",
+                          "text": ")"
+                        },
+                        {
+                          "tokenType": "DOT",
+                          "text": "."
+                        },
+                        {
+                          "tokenType": "EACH",
+                          "text": "each"
+                        },
+                        {
+                          "tokenType": "DO",
+                          "text": "do"
+                        },
+                        {
+                          "tokenType": "BIT_OR",
+                          "text": "|"
+                        },
+                        {
+                          "type": "Integer",
+                          "Id": [
+                            {
+                              "tokenType": "ID",
+                              "text": "i"
+                            }
+                          ]
+                        },
+                        {
+                          "tokenType": "BIT_OR",
+                          "text": "|"
+                        },
+                        {
+                          "Crlf": [
+                            {
+                              "tokenType": "CRLF",
+                              "text": "\r\n"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "Statement_body": [
+                        {
+                          "Statement_expression_list": [
+                            {
+                              "Expression": [
+                                {
+                                  "Function_inline_call": [
+                                    {
+                                      "Function_call": [
+                                        {
+                                          "Function_name": [
+                                            {
+                                              "type": "Func",
+                                              "Id": [
+                                                {
+                                                  "tokenType": "ID",
+                                                  "text": "puts"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "Function_call_param_list": [
+                                            {
+                                              "Function_call_params": [
+                                                {
+                                                  "Function_param": [
+                                                    {
+                                                      "Function_unnamed_param": [
+                                                        {
+                                                          "type": "Integer",
+                                                          "Dynamic_result": [
+                                                            {
+                                                              "type": "Integer",
+                                                              "Dynamic": [
+                                                                {
+                                                                  "type": "Integer",
+                                                                  "Id": [
+                                                                    {
+                                                                      "tokenType": "ID",
+                                                                      "text": "i"
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Terminator": [
+                                {
+                                  "Crlf": [
+                                    {
+                                      "tokenType": "CRLF",
+                                      "text": "\r\n"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tokenType": "END",
+                      "text": "end"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Terminator": [
+                {
+                  "Terminator": [
+                    {
+                      "Crlf": [
+                        {
+                          "tokenType": "CRLF",
+                          "text": "\r\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Crlf": [
+                    {
+                      "tokenType": "CRLF",
+                      "text": "\r\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Expression": [
+            {
+              "For_statement": [
+                {
+                  "For_header": [
+                    {
+                      "tokenType": "LEFT_RBRACKET",
+                      "text": "("
+                    },
+                    {
+                      "type": "Array",
+                      "Dynamic_result": [
+                        {
+                          "type": "Array",
+                          "Dynamic": [
+                            {
+                              "type": "Array",
+                              "Id": [
+                                {
+                                  "tokenType": "ID",
+                                  "text": "a"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tokenType": "RIGHT_RBRACKET",
+                      "text": ")"
+                    },
+                    {
+                      "tokenType": "DOT",
+                      "text": "."
+                    },
+                    {
+                      "tokenType": "EACH",
+                      "text": "each"
+                    },
+                    {
+                      "tokenType": "DO",
+                      "text": "do"
+                    },
+                    {
+                      "tokenType": "BIT_OR",
+                      "text": "|"
+                    },
+                    {
+                      "type": "Unknown",
+                      "Id": [
+                        {
+                          "tokenType": "ID",
+                          "text": "i"
+                        }
+                      ]
+                    },
+                    {
+                      "tokenType": "BIT_OR",
+                      "text": "|"
+                    },
+                    {
+                      "Crlf": [
+                        {
+                          "tokenType": "CRLF",
+                          "text": "\r\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Statement_body": [
+                    {
+                      "Statement_expression_list": [
+                        {
+                          "Expression": [
+                            {
+                              "Function_inline_call": [
+                                {
+                                  "Function_call": [
+                                    {
+                                      "Function_name": [
+                                        {
+                                          "type": "Func",
+                                          "Id": [
+                                            {
+                                              "tokenType": "ID",
+                                              "text": "puts"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "Function_call_param_list": [
+                                        {
+                                          "Function_call_params": [
+                                            {
+                                              "Function_param": [
+                                                {
+                                                  "Function_unnamed_param": [
+                                                    {
+                                                      "type": "Integer",
+                                                      "Dynamic_result": [
+                                                        {
+                                                          "type": "Integer",
+                                                          "Dynamic": [
+                                                            {
+                                                              "type": "Integer",
+                                                              "Id": [
+                                                                {
+                                                                  "tokenType": "ID",
+                                                                  "text": "i"
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "Terminator": [
+                            {
+                              "Crlf": [
+                                {
+                                  "tokenType": "CRLF",
+                                  "text": "\r\n"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tokenType": "END",
+                  "text": "end"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Terminator": [
+            {
+              "Crlf": [
+                {
+                  "tokenType": "CRLF",
+                  "text": "\r\n"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

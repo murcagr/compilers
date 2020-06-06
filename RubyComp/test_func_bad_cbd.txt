@@ -1,0 +1,6 @@
+
+def func (a,b,c)
+  return a+b
+end
+
+anotherfunc(1,2,3)

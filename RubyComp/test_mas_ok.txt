@@ -1,0 +1,8 @@
+
+mas = []
+
+mas[1] = "string"
+mas[2] = 5
+mas[3] = 15.5
+
+a = mas[3]

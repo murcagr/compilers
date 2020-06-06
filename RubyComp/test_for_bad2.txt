@@ -1,0 +1,6 @@
+a = 5.1
+b = a
+
+for i in a..b do
+  puts i
+end

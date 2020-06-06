@@ -1,0 +1,38 @@
+
+
+def func1
+  a = 10
+  return a
+end
+
+def func2 ()
+  a = 10+10
+  return a
+end
+
+def func3 (a,b,c)
+  return a+b+c
+end
+  
+def func4 (a)
+  a = 500
+  a = 1.1 + a
+  return a
+end
+
+func2()
+
+b = func3(5,10.5,13)
+
+c = func4(10000) + 1000
+
+def func2 (a,b,c)
+  retval = 15
+  somevar = a+b+10
+  return retval
+end
+
+func2 = 10
+anothervar = func2 + 12
+
+

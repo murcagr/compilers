@@ -1,0 +1,11 @@
+def fib(n)
+  if n <= 0
+    return "n should be more than 0"
+  elsif n == 1 or n == 2
+    return 1
+  else
+    return fib(n-1) + fib(n-2)
+  end
+end
+
+a = fib(12)

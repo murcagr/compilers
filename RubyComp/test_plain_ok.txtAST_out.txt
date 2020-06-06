@@ -1,0 +1,888 @@
+{
+  "Prog": [
+    {
+      "Expression_list": [
+        {
+          "Expression_list": [
+            {
+              "Expression_list": [
+                {
+                  "Expression_list": [
+                    {
+                      "Expression_list": [
+                        {
+                          "Expression_list": [
+                            {
+                              "Expression_list": [
+                                {
+                                  "Expression_list": [
+                                    {
+                                      "Expression": [
+                                        {
+                                          "Rvalue": [
+                                            {
+                                              "type": "Integer",
+                                              "Int_assignment": [
+                                                {
+                                                  "Lvalue": [
+                                                    {
+                                                      "type": "Integer",
+                                                      "Id": [
+                                                        {
+                                                          "tokenType": "ID",
+                                                          "text": "a"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "tokenType": "ASSIGN",
+                                                  "text": "="
+                                                },
+                                                {
+                                                  "type": "Integer",
+                                                  "Int_result": [
+                                                    {
+                                                      "type": "Integer",
+                                                      "Int_result": [
+                                                        {
+                                                          "type": "Integer",
+                                                          "Int_result": [
+                                                            {
+                                                              "type": "Integer",
+                                                              "Int_result": [
+                                                                {
+                                                                  "tokenType": "MINUS",
+                                                                  "text": "-"
+                                                                },
+                                                                {
+                                                                  "Int_t": [
+                                                                    {
+                                                                      "tokenType": "INT",
+                                                                      "text": "10"
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            },
+                                                            {
+                                                              "tokenType": "MINUS",
+                                                              "text": "-"
+                                                            },
+                                                            {
+                                                              "type": "Integer",
+                                                              "Int_result": [
+                                                                {
+                                                                  "Int_t": [
+                                                                    {
+                                                                      "tokenType": "INT",
+                                                                      "text": "1"
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "tokenType": "PLUS",
+                                                          "text": "+"
+                                                        },
+                                                        {
+                                                          "type": "Integer",
+                                                          "Int_result": [
+                                                            {
+                                                              "Int_t": [
+                                                                {
+                                                                  "tokenType": "INT",
+                                                                  "text": "10"
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "tokenType": "PLUS",
+                                                      "text": "+"
+                                                    },
+                                                    {
+                                                      "type": "Integer",
+                                                      "Int_result": [
+                                                        {
+                                                          "tokenType": "LEFT_RBRACKET",
+                                                          "text": "("
+                                                        },
+                                                        {
+                                                          "type": "Integer",
+                                                          "Int_result": [
+                                                            {
+                                                              "type": "Integer",
+                                                              "Int_result": [
+                                                                {
+                                                                  "Int_t": [
+                                                                    {
+                                                                      "tokenType": "INT",
+                                                                      "text": "10"
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            },
+                                                            {
+                                                              "tokenType": "MUL",
+                                                              "text": "*"
+                                                            },
+                                                            {
+                                                              "type": "Integer",
+                                                              "Int_result": [
+                                                                {
+                                                                  "Int_t": [
+                                                                    {
+                                                                      "tokenType": "INT",
+                                                                      "text": "1000"
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "tokenType": "RIGHT_RBRACKET",
+                                                          "text": ")"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "Terminator": [
+                                        {
+                                          "Crlf": [
+                                            {
+                                              "tokenType": "CRLF",
+                                              "text": "\r\n"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "Expression": [
+                                    {
+                                      "Rvalue": [
+                                        {
+                                          "type": "Integer",
+                                          "Int_assignment": [
+                                            {
+                                              "Lvalue": [
+                                                {
+                                                  "type": "Integer",
+                                                  "Id": [
+                                                    {
+                                                      "tokenType": "ID",
+                                                      "text": "b"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "tokenType": "ASSIGN",
+                                              "text": "="
+                                            },
+                                            {
+                                              "type": "Integer",
+                                              "Int_result": [
+                                                {
+                                                  "type": "Integer",
+                                                  "Int_result": [
+                                                    {
+                                                      "type": "Integer",
+                                                      "Int_result": [
+                                                        {
+                                                          "type": "Integer",
+                                                          "Int_result": [
+                                                            {
+                                                              "Int_t": [
+                                                                {
+                                                                  "tokenType": "INT",
+                                                                  "text": "15"
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "tokenType": "PLUS",
+                                                          "text": "+"
+                                                        },
+                                                        {
+                                                          "type": "Integer",
+                                                          "Int_result": [
+                                                            {
+                                                              "Int_t": [
+                                                                {
+                                                                  "tokenType": "INT",
+                                                                  "text": "10000"
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "tokenType": "MINUS",
+                                                      "text": "-"
+                                                    },
+                                                    {
+                                                      "type": "Integer",
+                                                      "Int_result": [
+                                                        {
+                                                          "tokenType": "LEFT_RBRACKET",
+                                                          "text": "("
+                                                        },
+                                                        {
+                                                          "type": "Integer",
+                                                          "Int_result": [
+                                                            {
+                                                              "type": "Integer",
+                                                              "Int_result": [
+                                                                {
+                                                                  "Int_t": [
+                                                                    {
+                                                                      "tokenType": "INT",
+                                                                      "text": "10"
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            },
+                                                            {
+                                                              "tokenType": "MINUS",
+                                                              "text": "-"
+                                                            },
+                                                            {
+                                                              "type": "Integer",
+                                                              "Int_result": [
+                                                                {
+                                                                  "Int_t": [
+                                                                    {
+                                                                      "tokenType": "INT",
+                                                                      "text": "5"
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "tokenType": "RIGHT_RBRACKET",
+                                                          "text": ")"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "tokenType": "PLUS",
+                                                  "text": "+"
+                                                },
+                                                {
+                                                  "type": "Integer",
+                                                  "Int_result": [
+                                                    {
+                                                      "Int_t": [
+                                                        {
+                                                          "tokenType": "INT",
+                                                          "text": "100"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "Terminator": [
+                                    {
+                                      "Crlf": [
+                                        {
+                                          "tokenType": "CRLF",
+                                          "text": "\r\n"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Expression": [
+                                {
+                                  "Rvalue": [
+                                    {
+                                      "Dynamic_assignment": [
+                                        {
+                                          "Lvalue": [
+                                            {
+                                              "type": "Integer",
+                                              "Id": [
+                                                {
+                                                  "tokenType": "ID",
+                                                  "text": "b"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "tokenType": "MINUS_ASSIGN",
+                                          "text": "-="
+                                        },
+                                        {
+                                          "type": "Integer",
+                                          "Dynamic_result": [
+                                            {
+                                              "type": "Integer",
+                                              "Dynamic": [
+                                                {
+                                                  "type": "Integer",
+                                                  "Id": [
+                                                    {
+                                                      "tokenType": "ID",
+                                                      "text": "a"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Terminator": [
+                                {
+                                  "Terminator": [
+                                    {
+                                      "Crlf": [
+                                        {
+                                          "tokenType": "CRLF",
+                                          "text": "\r\n"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "Crlf": [
+                                    {
+                                      "tokenType": "CRLF",
+                                      "text": "\r\n"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "Expression": [
+                            {
+                              "Rvalue": [
+                                {
+                                  "type": "Float",
+                                  "Float_assignment": [
+                                    {
+                                      "Lvalue": [
+                                        {
+                                          "type": "Float",
+                                          "Id": [
+                                            {
+                                              "tokenType": "ID",
+                                              "text": "m"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tokenType": "ASSIGN",
+                                      "text": "="
+                                    },
+                                    {
+                                      "type": "Float",
+                                      "Float_result": [
+                                        {
+                                          "type": "Float",
+                                          "Float_result": [
+                                            {
+                                              "Float_t": [
+                                                {
+                                                  "tokenType": "FLOAT",
+                                                  "text": "1.1"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "tokenType": "PLUS",
+                                          "text": "+"
+                                        },
+                                        {
+                                          "type": "Float",
+                                          "Float_result": [
+                                            {
+                                              "type": "Integer",
+                                              "Int_result": [
+                                                {
+                                                  "Int_t": [
+                                                    {
+                                                      "tokenType": "INT",
+                                                      "text": "5"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "tokenType": "PLUS",
+                                              "text": "+"
+                                            },
+                                            {
+                                              "type": "Float",
+                                              "Float_result": [
+                                                {
+                                                  "Float_t": [
+                                                    {
+                                                      "tokenType": "FLOAT",
+                                                      "text": "123.5"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "Terminator": [
+                            {
+                              "Crlf": [
+                                {
+                                  "tokenType": "CRLF",
+                                  "text": "\r\n"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "Expression": [
+                        {
+                          "Rvalue": [
+                            {
+                              "type": "Integer",
+                              "Dynamic_assignment": [
+                                {
+                                  "Lvalue": [
+                                    {
+                                      "type": "Float",
+                                      "Id": [
+                                        {
+                                          "tokenType": "ID",
+                                          "text": "c"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tokenType": "ASSIGN",
+                                  "text": "="
+                                },
+                                {
+                                  "type": "Integer",
+                                  "Dynamic_result": [
+                                    {
+                                      "type": "Integer",
+                                      "Dynamic_result": [
+                                        {
+                                          "type": "Integer",
+                                          "Dynamic": [
+                                            {
+                                              "type": "Integer",
+                                              "Id": [
+                                                {
+                                                  "tokenType": "ID",
+                                                  "text": "b"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tokenType": "PLUS",
+                                      "text": "+"
+                                    },
+                                    {
+                                      "type": "Integer",
+                                      "Int_result": [
+                                        {
+                                          "type": "Integer",
+                                          "Int_result": [
+                                            {
+                                              "Int_t": [
+                                                {
+                                                  "tokenType": "INT",
+                                                  "text": "123"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "tokenType": "DIV",
+                                          "text": "/"
+                                        },
+                                        {
+                                          "type": "Integer",
+                                          "Int_result": [
+                                            {
+                                              "Int_t": [
+                                                {
+                                                  "tokenType": "INT",
+                                                  "text": "15"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "Terminator": [
+                        {
+                          "Crlf": [
+                            {
+                              "tokenType": "CRLF",
+                              "text": "\r\n"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Expression": [
+                    {
+                      "Rvalue": [
+                        {
+                          "Dynamic_assignment": [
+                            {
+                              "Lvalue": [
+                                {
+                                  "type": "Float",
+                                  "Id": [
+                                    {
+                                      "tokenType": "ID",
+                                      "text": "m"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tokenType": "PLUS_ASSIGN",
+                              "text": "+="
+                            },
+                            {
+                              "type": "Integer",
+                              "Dynamic_result": [
+                                {
+                                  "type": "Integer",
+                                  "Dynamic": [
+                                    {
+                                      "type": "Integer",
+                                      "Id": [
+                                        {
+                                          "tokenType": "ID",
+                                          "text": "c"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Terminator": [
+                    {
+                      "Crlf": [
+                        {
+                          "tokenType": "CRLF",
+                          "text": "\r\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Expression": [
+                {
+                  "Rvalue": [
+                    {
+                      "type": "Integer",
+                      "Int_assignment": [
+                        {
+                          "Lvalue": [
+                            {
+                              "type": "Integer",
+                              "Id": [
+                                {
+                                  "tokenType": "ID",
+                                  "text": "k"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tokenType": "ASSIGN",
+                          "text": "="
+                        },
+                        {
+                          "type": "Integer",
+                          "Int_result": [
+                            {
+                              "Int_t": [
+                                {
+                                  "tokenType": "INT",
+                                  "text": "15"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Terminator": [
+                {
+                  "Crlf": [
+                    {
+                      "tokenType": "CRLF",
+                      "text": "\r\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Expression": [
+            {
+              "Rvalue": [
+                {
+                  "type": "Float",
+                  "Dynamic_assignment": [
+                    {
+                      "Lvalue": [
+                        {
+                          "type": "Float",
+                          "Id": [
+                            {
+                              "tokenType": "ID",
+                              "text": "q"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tokenType": "ASSIGN",
+                      "text": "="
+                    },
+                    {
+                      "type": "Float",
+                      "Dynamic_result": [
+                        {
+                          "type": "Float",
+                          "Dynamic_result": [
+                            {
+                              "type": "Float",
+                              "Dynamic_result": [
+                                {
+                                  "type": "Integer",
+                                  "Dynamic_result": [
+                                    {
+                                      "type": "Integer",
+                                      "Dynamic": [
+                                        {
+                                          "type": "Integer",
+                                          "Id": [
+                                            {
+                                              "tokenType": "ID",
+                                              "text": "k"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tokenType": "PLUS",
+                                  "text": "+"
+                                },
+                                {
+                                  "type": "Float",
+                                  "Dynamic_result": [
+                                    {
+                                      "type": "Float",
+                                      "Dynamic": [
+                                        {
+                                          "type": "Float",
+                                          "Id": [
+                                            {
+                                              "tokenType": "ID",
+                                              "text": "m"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tokenType": "PLUS",
+                              "text": "+"
+                            },
+                            {
+                              "type": "Integer",
+                              "Dynamic_result": [
+                                {
+                                  "type": "Integer",
+                                  "Dynamic": [
+                                    {
+                                      "type": "Integer",
+                                      "Id": [
+                                        {
+                                          "tokenType": "ID",
+                                          "text": "c"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tokenType": "PLUS",
+                          "text": "+"
+                        },
+                        {
+                          "type": "Integer",
+                          "Dynamic_result": [
+                            {
+                              "type": "Integer",
+                              "Dynamic": [
+                                {
+                                  "type": "Integer",
+                                  "Id": [
+                                    {
+                                      "tokenType": "ID",
+                                      "text": "a"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Terminator": [
+            {
+              "Crlf": [
+                {
+                  "tokenType": "CRLF",
+                  "text": "\r\n"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

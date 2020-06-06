@@ -1,0 +1,7 @@
+
+d = "abc"
+d = "abc"+"def"
+d = "abc"*3
+d = 'abc'
+d = 'abc'+'def'
+d = 'abc'*3

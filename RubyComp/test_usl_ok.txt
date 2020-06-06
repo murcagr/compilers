@@ -1,0 +1,18 @@
+b = 1
+a = 1.1
+
+if a == 1
+  a = 2
+  unless b >= 2
+    b = 3
+  end
+else
+  a = 3
+end
+
+
+if a > 0 and b == 1
+   a = 100
+elsif a == 1 or b == 100
+   a = 10000
+end

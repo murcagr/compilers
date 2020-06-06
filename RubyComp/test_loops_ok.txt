@@ -1,0 +1,19 @@
+
+a = []
+a[1] = 10
+
+for i in a do
+  puts i
+end
+
+for i in 0..10 do
+  puts i
+end
+
+(0..10).each do |i|
+  puts i
+end
+
+(a).each do |i|
+  puts i
+end

@@ -1,0 +1,13 @@
+if 'a' > 'b'
+  puts "a > b"
+elsif 'a' < 'b'
+  puts "a < b"
+end
+
+unless 'a' < 'b'
+  puts "a > b"
+  elsif 'c' > 'd'
+  puts "c > d"
+else
+  puts "c < d"
+end

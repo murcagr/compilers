@@ -1,0 +1,438 @@
+{
+  "Prog": [
+    {
+      "Expression_list": [
+        {
+          "Expression_list": [
+            {
+              "Expression_list": [
+                {
+                  "Expression_list": [
+                    {
+                      "Expression_list": [
+                        {
+                          "Expression_list": [
+                            {
+                              "Terminator": [
+                                {
+                                  "Crlf": [
+                                    {
+                                      "tokenType": "CRLF",
+                                      "text": "\r\n"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "Expression": [
+                            {
+                              "Rvalue": [
+                                {
+                                  "Initial_array_assignment": [
+                                    {
+                                      "Lvalue": [
+                                        {
+                                          "type": "Array",
+                                          "Id": [
+                                            {
+                                              "tokenType": "ID",
+                                              "text": "mas"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tokenType": "ASSIGN",
+                                      "text": "="
+                                    },
+                                    {
+                                      "tokenType": "LEFT_SBRACKET",
+                                      "text": "["
+                                    },
+                                    {
+                                      "tokenType": "RIGHT_SBRACKET",
+                                      "text": "]"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "Terminator": [
+                            {
+                              "Terminator": [
+                                {
+                                  "Crlf": [
+                                    {
+                                      "tokenType": "CRLF",
+                                      "text": "\r\n"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Crlf": [
+                                {
+                                  "tokenType": "CRLF",
+                                  "text": "\r\n"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "Expression": [
+                        {
+                          "Rvalue": [
+                            {
+                              "Array_assignment": [
+                                {
+                                  "Array_selector": [
+                                    {
+                                      "type": "Array",
+                                      "Id": [
+                                        {
+                                          "tokenType": "ID",
+                                          "text": "mas"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tokenType": "LEFT_SBRACKET",
+                                      "text": "["
+                                    },
+                                    {
+                                      "type": "Integer",
+                                      "Int_result": [
+                                        {
+                                          "Int_t": [
+                                            {
+                                              "tokenType": "INT",
+                                              "text": "1"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tokenType": "RIGHT_SBRACKET",
+                                      "text": "]"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tokenType": "ASSIGN",
+                                  "text": "="
+                                },
+                                {
+                                  "type": "String",
+                                  "All_result": [
+                                    {
+                                      "type": "String",
+                                      "String_result": [
+                                        {
+                                          "Literal_t": [
+                                            {
+                                              "tokenType": "LITERAL",
+                                              "text": "\"string\""
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "Terminator": [
+                        {
+                          "Crlf": [
+                            {
+                              "tokenType": "CRLF",
+                              "text": "\r\n"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Expression": [
+                    {
+                      "Rvalue": [
+                        {
+                          "Array_assignment": [
+                            {
+                              "Array_selector": [
+                                {
+                                  "type": "Array",
+                                  "Id": [
+                                    {
+                                      "tokenType": "ID",
+                                      "text": "mas"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tokenType": "LEFT_SBRACKET",
+                                  "text": "["
+                                },
+                                {
+                                  "type": "Integer",
+                                  "Int_result": [
+                                    {
+                                      "Int_t": [
+                                        {
+                                          "tokenType": "INT",
+                                          "text": "2"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tokenType": "RIGHT_SBRACKET",
+                                  "text": "]"
+                                }
+                              ]
+                            },
+                            {
+                              "tokenType": "ASSIGN",
+                              "text": "="
+                            },
+                            {
+                              "type": "Integer",
+                              "All_result": [
+                                {
+                                  "type": "Integer",
+                                  "Int_result": [
+                                    {
+                                      "Int_t": [
+                                        {
+                                          "tokenType": "INT",
+                                          "text": "5"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Terminator": [
+                    {
+                      "Crlf": [
+                        {
+                          "tokenType": "CRLF",
+                          "text": "\r\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Expression": [
+                {
+                  "Rvalue": [
+                    {
+                      "Array_assignment": [
+                        {
+                          "Array_selector": [
+                            {
+                              "type": "Array",
+                              "Id": [
+                                {
+                                  "tokenType": "ID",
+                                  "text": "mas"
+                                }
+                              ]
+                            },
+                            {
+                              "tokenType": "LEFT_SBRACKET",
+                              "text": "["
+                            },
+                            {
+                              "type": "Integer",
+                              "Int_result": [
+                                {
+                                  "Int_t": [
+                                    {
+                                      "tokenType": "INT",
+                                      "text": "3"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tokenType": "RIGHT_SBRACKET",
+                              "text": "]"
+                            }
+                          ]
+                        },
+                        {
+                          "tokenType": "ASSIGN",
+                          "text": "="
+                        },
+                        {
+                          "type": "Float",
+                          "All_result": [
+                            {
+                              "type": "Float",
+                              "Float_result": [
+                                {
+                                  "Float_t": [
+                                    {
+                                      "tokenType": "FLOAT",
+                                      "text": "15.5"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Terminator": [
+                {
+                  "Terminator": [
+                    {
+                      "Crlf": [
+                        {
+                          "tokenType": "CRLF",
+                          "text": "\r\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Crlf": [
+                    {
+                      "tokenType": "CRLF",
+                      "text": "\r\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Expression": [
+            {
+              "Rvalue": [
+                {
+                  "Dynamic_assignment": [
+                    {
+                      "Lvalue": [
+                        {
+                          "type": "Float",
+                          "Id": [
+                            {
+                              "tokenType": "ID",
+                              "text": "a"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tokenType": "ASSIGN",
+                      "text": "="
+                    },
+                    {
+                      "type": "Unknown",
+                      "Dynamic_result": [
+                        {
+                          "type": "Unknown",
+                          "Dynamic": [
+                            {
+                              "Array_selector": [
+                                {
+                                  "type": "Array",
+                                  "Id": [
+                                    {
+                                      "tokenType": "ID",
+                                      "text": "mas"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tokenType": "LEFT_SBRACKET",
+                                  "text": "["
+                                },
+                                {
+                                  "type": "Integer",
+                                  "Int_result": [
+                                    {
+                                      "Int_t": [
+                                        {
+                                          "tokenType": "INT",
+                                          "text": "3"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tokenType": "RIGHT_SBRACKET",
+                                  "text": "]"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Terminator": [
+            {
+              "Crlf": [
+                {
+                  "tokenType": "CRLF",
+                  "text": "\r\n"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

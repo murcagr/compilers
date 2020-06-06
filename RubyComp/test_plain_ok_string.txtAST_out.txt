@@ -1,0 +1,462 @@
+{
+  "Prog": [
+    {
+      "Expression_list": [
+        {
+          "Expression_list": [
+            {
+              "Expression_list": [
+                {
+                  "Expression_list": [
+                    {
+                      "Expression_list": [
+                        {
+                          "Expression_list": [
+                            {
+                              "Expression_list": [
+                                {
+                                  "Terminator": [
+                                    {
+                                      "Crlf": [
+                                        {
+                                          "tokenType": "CRLF",
+                                          "text": "\r\n"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Expression": [
+                                {
+                                  "Rvalue": [
+                                    {
+                                      "type": "String",
+                                      "String_assignment": [
+                                        {
+                                          "Lvalue": [
+                                            {
+                                              "type": "String",
+                                              "Id": [
+                                                {
+                                                  "tokenType": "ID",
+                                                  "text": "d"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "tokenType": "ASSIGN",
+                                          "text": "="
+                                        },
+                                        {
+                                          "type": "String",
+                                          "String_result": [
+                                            {
+                                              "Literal_t": [
+                                                {
+                                                  "tokenType": "LITERAL",
+                                                  "text": "\"abc\""
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Terminator": [
+                                {
+                                  "Crlf": [
+                                    {
+                                      "tokenType": "CRLF",
+                                      "text": "\r\n"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "Expression": [
+                            {
+                              "Rvalue": [
+                                {
+                                  "type": "String",
+                                  "String_assignment": [
+                                    {
+                                      "Lvalue": [
+                                        {
+                                          "type": "String",
+                                          "Id": [
+                                            {
+                                              "tokenType": "ID",
+                                              "text": "d"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tokenType": "ASSIGN",
+                                      "text": "="
+                                    },
+                                    {
+                                      "type": "String",
+                                      "String_result": [
+                                        {
+                                          "type": "String",
+                                          "String_result": [
+                                            {
+                                              "Literal_t": [
+                                                {
+                                                  "tokenType": "LITERAL",
+                                                  "text": "\"abc\""
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "tokenType": "PLUS",
+                                          "text": "+"
+                                        },
+                                        {
+                                          "type": "String",
+                                          "String_result": [
+                                            {
+                                              "Literal_t": [
+                                                {
+                                                  "tokenType": "LITERAL",
+                                                  "text": "\"def\""
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "Terminator": [
+                            {
+                              "Crlf": [
+                                {
+                                  "tokenType": "CRLF",
+                                  "text": "\r\n"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "Expression": [
+                        {
+                          "Rvalue": [
+                            {
+                              "type": "String",
+                              "String_assignment": [
+                                {
+                                  "Lvalue": [
+                                    {
+                                      "type": "String",
+                                      "Id": [
+                                        {
+                                          "tokenType": "ID",
+                                          "text": "d"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tokenType": "ASSIGN",
+                                  "text": "="
+                                },
+                                {
+                                  "type": "String",
+                                  "String_result": [
+                                    {
+                                      "type": "String",
+                                      "String_result": [
+                                        {
+                                          "Literal_t": [
+                                            {
+                                              "tokenType": "LITERAL",
+                                              "text": "\"abc\""
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tokenType": "MUL",
+                                      "text": "*"
+                                    },
+                                    {
+                                      "type": "Integer",
+                                      "Int_result": [
+                                        {
+                                          "Int_t": [
+                                            {
+                                              "tokenType": "INT",
+                                              "text": "3"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "Terminator": [
+                        {
+                          "Crlf": [
+                            {
+                              "tokenType": "CRLF",
+                              "text": "\r\n"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Expression": [
+                    {
+                      "Rvalue": [
+                        {
+                          "type": "String",
+                          "String_assignment": [
+                            {
+                              "Lvalue": [
+                                {
+                                  "type": "String",
+                                  "Id": [
+                                    {
+                                      "tokenType": "ID",
+                                      "text": "d"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tokenType": "ASSIGN",
+                              "text": "="
+                            },
+                            {
+                              "type": "String",
+                              "String_result": [
+                                {
+                                  "Literal_t": [
+                                    {
+                                      "tokenType": "LITERAL",
+                                      "text": "'abc'"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Terminator": [
+                    {
+                      "Crlf": [
+                        {
+                          "tokenType": "CRLF",
+                          "text": "\r\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Expression": [
+                {
+                  "Rvalue": [
+                    {
+                      "type": "String",
+                      "String_assignment": [
+                        {
+                          "Lvalue": [
+                            {
+                              "type": "String",
+                              "Id": [
+                                {
+                                  "tokenType": "ID",
+                                  "text": "d"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tokenType": "ASSIGN",
+                          "text": "="
+                        },
+                        {
+                          "type": "String",
+                          "String_result": [
+                            {
+                              "type": "String",
+                              "String_result": [
+                                {
+                                  "Literal_t": [
+                                    {
+                                      "tokenType": "LITERAL",
+                                      "text": "'abc'"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tokenType": "PLUS",
+                              "text": "+"
+                            },
+                            {
+                              "type": "String",
+                              "String_result": [
+                                {
+                                  "Literal_t": [
+                                    {
+                                      "tokenType": "LITERAL",
+                                      "text": "'def'"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Terminator": [
+                {
+                  "Crlf": [
+                    {
+                      "tokenType": "CRLF",
+                      "text": "\r\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Expression": [
+            {
+              "Rvalue": [
+                {
+                  "type": "String",
+                  "String_assignment": [
+                    {
+                      "Lvalue": [
+                        {
+                          "type": "String",
+                          "Id": [
+                            {
+                              "tokenType": "ID",
+                              "text": "d"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tokenType": "ASSIGN",
+                      "text": "="
+                    },
+                    {
+                      "type": "String",
+                      "String_result": [
+                        {
+                          "type": "String",
+                          "String_result": [
+                            {
+                              "Literal_t": [
+                                {
+                                  "tokenType": "LITERAL",
+                                  "text": "'abc'"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tokenType": "MUL",
+                          "text": "*"
+                        },
+                        {
+                          "type": "Integer",
+                          "Int_result": [
+                            {
+                              "Int_t": [
+                                {
+                                  "tokenType": "INT",
+                                  "text": "3"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Terminator": [
+            {
+              "Crlf": [
+                {
+                  "tokenType": "CRLF",
+                  "text": "\r\n"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

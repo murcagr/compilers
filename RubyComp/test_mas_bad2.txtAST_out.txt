@@ -1,0 +1,246 @@
+{
+  "Prog": [
+    {
+      "Expression_list": [
+        {
+          "Expression_list": [
+            {
+              "Expression_list": [
+                {
+                  "Expression_list": [
+                    {
+                      "Terminator": [
+                        {
+                          "Crlf": [
+                            {
+                              "tokenType": "CRLF",
+                              "text": "\r\n"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Expression": [
+                    {
+                      "Rvalue": [
+                        {
+                          "Initial_array_assignment": [
+                            {
+                              "Lvalue": [
+                                {
+                                  "type": "Array",
+                                  "Id": [
+                                    {
+                                      "tokenType": "ID",
+                                      "text": "mas"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tokenType": "ASSIGN",
+                              "text": "="
+                            },
+                            {
+                              "tokenType": "LEFT_SBRACKET",
+                              "text": "["
+                            },
+                            {
+                              "tokenType": "RIGHT_SBRACKET",
+                              "text": "]"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Terminator": [
+                    {
+                      "Terminator": [
+                        {
+                          "Crlf": [
+                            {
+                              "tokenType": "CRLF",
+                              "text": "\r\n"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "Crlf": [
+                        {
+                          "tokenType": "CRLF",
+                          "text": "\r\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Expression": [
+                {
+                  "Rvalue": [
+                    {
+                      "type": "Float",
+                      "Float_assignment": [
+                        {
+                          "Lvalue": [
+                            {
+                              "type": "Float",
+                              "Id": [
+                                {
+                                  "tokenType": "ID",
+                                  "text": "a"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tokenType": "ASSIGN",
+                          "text": "="
+                        },
+                        {
+                          "type": "Float",
+                          "Float_result": [
+                            {
+                              "Float_t": [
+                                {
+                                  "tokenType": "FLOAT",
+                                  "text": "5.5"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Terminator": [
+                {
+                  "Terminator": [
+                    {
+                      "Crlf": [
+                        {
+                          "tokenType": "CRLF",
+                          "text": "\r\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Crlf": [
+                    {
+                      "tokenType": "CRLF",
+                      "text": "\r\n"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Expression": [
+            {
+              "Rvalue": [
+                {
+                  "Array_assignment": [
+                    {
+                      "Array_selector": [
+                        {
+                          "type": "Array",
+                          "Id": [
+                            {
+                              "tokenType": "ID",
+                              "text": "mas"
+                            }
+                          ]
+                        },
+                        {
+                          "tokenType": "LEFT_SBRACKET",
+                          "text": "["
+                        },
+                        {
+                          "type": "Float",
+                          "Dynamic_result": [
+                            {
+                              "type": "Float",
+                              "Dynamic": [
+                                {
+                                  "type": "Float",
+                                  "Id": [
+                                    {
+                                      "tokenType": "ID",
+                                      "text": "a"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tokenType": "RIGHT_SBRACKET",
+                          "text": "]"
+                        }
+                      ]
+                    },
+                    {
+                      "tokenType": "ASSIGN",
+                      "text": "="
+                    },
+                    {
+                      "type": "Integer",
+                      "All_result": [
+                        {
+                          "type": "Integer",
+                          "Int_result": [
+                            {
+                              "Int_t": [
+                                {
+                                  "tokenType": "INT",
+                                  "text": "12"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Terminator": [
+            {
+              "Crlf": [
+                {
+                  "tokenType": "CRLF",
+                  "text": "\r\n"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
